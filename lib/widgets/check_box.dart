@@ -38,7 +38,7 @@ class CheckBox extends StatelessWidget {
               child: this.value
                   ? Icon(
                       Icons.check,
-                      size: 18,
+                      size: dp(18),
                       color: Colors.white,
                     )
                   : null,
