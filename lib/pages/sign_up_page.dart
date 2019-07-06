@@ -78,6 +78,53 @@ class _SignUpPageState extends State<SignUpPage> {
                 ],
               ),
             ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(bottom: 127),
+            alignment: Alignment.bottomCenter,
+            child: Text(
+              """By creating an account you agree to our\nTerms of Service and Privacy Policy""",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                height: dp(1.1),
+                fontWeight: FontWeight.w500,
+              ).merge(fontSize12),
+            ),
+          ),
+          Container(
+            alignment: Alignment.bottomCenter,
+            margin: EdgeInsets.only(bottom: dp(42)),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Material(
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(49),
+                    onTap: () {},
+                    child: Image.asset(
+                      "assets/images/GooglePlus.png",
+                      width: dp(67),
+                      height: dp(67),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 15,
+                  height: 1,
+                ),
+                Material(
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(49),
+                    onTap: () {},
+                    child: Image.asset(
+                      "assets/images/Facebook.png",
+                      width: dp(67),
+                      height: dp(67),
+                    ),
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
