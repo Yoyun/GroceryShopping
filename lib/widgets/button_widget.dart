@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_shopping/utils/size.dart';
 
-class Button extends StatefulWidget {
+class Button extends StatelessWidget {
   final double width;
   final double height;
   final Color bgColor;
@@ -18,34 +18,6 @@ class Button extends StatefulWidget {
     this.textColor = Colors.white,
     this.onTap,
   }) : super(key: key);
-
-  @override
-  _ButtonState createState() => _ButtonState(
-        width: this.width,
-        height: this.height,
-        bgColor: this.bgColor,
-        text: this.text,
-        textColor: this.textColor,
-        onTap: this.onTap,
-      );
-}
-
-class _ButtonState extends State<Button> {
-  double width;
-  double height;
-  Color bgColor;
-  String text;
-  Color textColor;
-  VoidCallback onTap;
-
-  _ButtonState({
-    this.width,
-    this.height,
-    this.bgColor,
-    this.text,
-    this.textColor,
-    this.onTap,
-  });
 
   @override
   Widget build(BuildContext context) {
