@@ -44,10 +44,10 @@ class _EditViewState extends State<EditView> {
           bottom: dp(15),
         ),
         border: OutlineInputBorder(
-            borderSide: BorderSide(color: Color(0xFF111111), width: 1),
+            borderSide: BorderSide(color: Color(0xFF111111), width: dp(1)),
             borderRadius: BorderRadius.circular(0)),
         focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Color(0xFF555555), width: 2),
+            borderSide: BorderSide(color: Color(0xFF555555), width: dp(2)),
             borderRadius: BorderRadius.circular(0)),
       ),
     );

@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-double dp(int size) {
+double dp(double size) {
   return MediaQueryData.fromWindow(window).size.width / 375.0 * size;
 }
 
