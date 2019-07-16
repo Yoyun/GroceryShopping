@@ -52,6 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     initialIndex: 0,
                     onChanged: (index) {
                       if (index == 1) {
+//                        Navigator.push(context, PageRouteBuilder(pageBuilder: null));
                         Navigator.of(context).pushNamed('/sign_in');
                       }
                     },
