@@ -2,6 +2,13 @@
 
 A new Flutter project.
 
+## ScreenShots
+<p align="center">
+	<img src="https://github.com/Yoyun/GroceryShopping/blob/master/screenshots/screenshots_1.png" alt="Sample"  width="250" >
+	<img src="https://github.com/Yoyun/GroceryShopping/blob/master/screenshots/screenshots_2.png" alt="Sample"  width="250" >
+	<img src="https://github.com/Yoyun/GroceryShopping/blob/master/screenshots/screenshots_3.png" alt="Sample"  width="250" >
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
