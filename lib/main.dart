@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_shopping/pages/home_page.dart';
 import 'package:grocery_shopping/pages/sign_in_page.dart';
 import 'package:grocery_shopping/pages/sign_up_page.dart';
 import 'package:grocery_shopping/pages/welcome_page.dart';
@@ -16,12 +15,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        "/": (context) => HomePage(),
-        "/welcome": (context) => WelcomePage(),
+        "/": (context) => WelcomePage(),
         "/sign_up": (context) => SignUpPage(),
         "/sign_in": (context) => SignInPage(),
       },
-      initialRoute: '/welcome',
     );
   }
 }

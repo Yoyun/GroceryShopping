@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_shopping/utils/size.dart';
 
-class WelcomePage extends StatelessWidget {
+class WelcomePage extends StatefulWidget {
+  @override
+  _WelcomePageState createState() => _WelcomePageState();
+}
+
+class _WelcomePageState extends State<WelcomePage> {
+
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3)).whenComplete(() {
-      Navigator.of(context).pushReplacementNamed("/sign_up");
-    });
 
     return Scaffold(
       body: Stack(
@@ -42,4 +45,12 @@ class WelcomePage extends StatelessWidget {
       ),
     );
   }
+
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 3)).whenComplete(() {
+      Navigator.of(context).pushReplacementNamed("/sign_up");
+    });
+  }
 }
+
